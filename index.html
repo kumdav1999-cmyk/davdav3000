@@ -3451,7 +3451,7 @@ function load(k){try{const v=localStorage.getItem(k);return v?JSON.parse(v):null
 function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){} cloudSet(k,JSON.stringify(v))}
 /* ---------- Telegram ---------- */
 // Кому открыт доступ: числовые Telegram ID. Пустой список — режим настройки (показывает ваш ID).
-const ALLOWED_IDS=[];
+const ALLOWED_IDS=[505994391];
 const TG=(window.Telegram&&window.Telegram.WebApp&&window.Telegram.WebApp.initData!==undefined)?window.Telegram.WebApp:null;
 const TG_UID=TG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null;
 const CS=TG&&TG.CloudStorage&&TG.isVersionAtLeast&&TG.isVersionAtLeast('6.9')?TG.CloudStorage:null;
